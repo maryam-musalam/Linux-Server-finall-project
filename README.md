@@ -387,7 +387,7 @@ python electronicCategories.py
 
 http://52.59.252.140.xip.io
 
-Reference:
+Reference: <br>
 https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-users.html
 https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html
 https://github.com/mulligan121/Udacity-Linux-Configuration
