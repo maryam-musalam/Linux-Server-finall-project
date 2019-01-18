@@ -29,21 +29,21 @@ B) custom - UDP - 123
 15- go to connect from the nav bar and press Connect using SSH.
 16- in the terminal that opened for you enter the following:
 
-A) sudo apt-get update
-B) sudo apt-get upgrade - Press Y - Keep the local version currently installed - Enter
-C) sudo nano /etc/ssh/sshd_config and add Port 2200 under Port 22 without deleting 22 port for now (Press ^W then ^x and say yes)
-D) sudo ufw status
+A) sudo apt-get update <br>
+B) sudo apt-get upgrade - Press Y - Keep the local version currently installed - Enter <br>
+C) sudo nano /etc/ssh/sshd_config and add Port 2200 under Port 22 without deleting 22 port for now (Press ^W then ^x and say yes)<br>
+D) sudo ufw status <br>
 
-- you should see : status: inactive
-  E) sudo ufw default deny incoming <br>
-  F) sudo ufw default allow outgoing <br>
-  G) sudo ufw allow ssh <br>
-  H) sudo ufw allow 2200/tcp <br>
-  I) sudo ufw allow 80/tcp <br>
-  J) sudo ufw allow 123/UDP <br>
-  K) sudo ufw enable <br>
-  L) press y to enable the ufw changes <br>
-  M) then from the instance page press Reboot Button and wait seconds. <br>
+- you should see : status: inactive <br>
+E) sudo ufw default deny incoming <br>
+F) sudo ufw default allow outgoing <br>
+G) sudo ufw allow ssh <br>
+H) sudo ufw allow 2200/tcp <br>
+I) sudo ufw allow 80/tcp <br>
+J) sudo ufw allow 123/UDP <br>
+K) sudo ufw enable <br>
+L) press y to enable the ufw changes <br>
+M) then from the instance page press Reboot Button and wait seconds. <br>
 
 ## How to check that our new port 2200 is working :
 
