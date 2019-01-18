@@ -8,19 +8,19 @@ In this project we will host our project “item catalog” to the server, using
 
 ## How to start with Amazon Lightsail ?
 
-1- you need to create an account in amazon if you don’t already have one.
-2- log into https://lightsail.aws.amazon.com with your account that you have created.
-3 - click on create instance button.
-4- choose instance location, for me I picked Frankfurt, Zone A (eu-central-1a).
-5- select Linux/Unix platform.
-6- select OS only blueprint.
-7- select Ubuntu 16.04 LTS.
-8- choose your instance plane, go with the less price for this project.
-9-identify your instance, I called it “electronic_project”.
-10- press create instance.
-11- wait seconds till your instance be ready.
-12- press the title after it turn into blue to go to your instance that you just created.
-13 - from the nav bar select networking.
+1- you need to create an account in amazon if you don’t already have one.<br>
+2- log into https://lightsail.aws.amazon.com with your account that you have created.<br>
+3 - click on create instance button.<br>
+4- choose instance location, for me I picked Frankfurt, Zone A (eu-central-1a).<br>
+5- select Linux/Unix platform.<br>
+6- select OS only blueprint.<br>
+7- select Ubuntu 16.04 LTS.<br>
+8- choose your instance plane, go with the less price for this project.<br>
+9-identify your instance, I called it “electronic_project”.<br>
+10- press create instance.<br>
+11- wait seconds till your instance be ready.<br>
+12- press the title after it turn into blue to go to your instance that you just created.<br>
+13 - from the nav bar select networking.<br>
 
 14- in the networking page down to firewall section add the following then save:
 A) custom - TCP - 2200
@@ -35,22 +35,22 @@ C) sudo nano /etc/ssh/sshd_config and add Port 2200 under Port 22 without deleti
 D) sudo ufw status
 
 - you should see : status: inactive
-  E) sudo ufw default deny incoming
-  F) sudo ufw default allow outgoing
-  G) sudo ufw allow ssh
-  H) sudo ufw allow 2200/tcp
-  I) sudo ufw allow 80/tcp
-  J) sudo ufw allow 123/UDP
-  K) sudo ufw enable
-  L) press y to enable the ufw changes
-  M) then from the instance page press Reboot Button and wait seconds.
+  E) sudo ufw default deny incoming <br>
+  F) sudo ufw default allow outgoing <br>
+  G) sudo ufw allow ssh <br>
+  H) sudo ufw allow 2200/tcp <br>
+  I) sudo ufw allow 80/tcp <br>
+  J) sudo ufw allow 123/UDP <br>
+  K) sudo ufw enable <br>
+  L) press y to enable the ufw changes <br>
+  M) then from the instance page press Reboot Button and wait seconds. <br>
 
 ## How to check that our new port 2200 is working :
 
-1- click connect nav and scroll down the page and press : Account page link.
-2- press download to download your private_key
-3- move your :LightsailDefaultKey-eu-central-1.pem to your .ssh folder in your PC
-For me I did on my terminal :
+1- click connect nav and scroll down the page and press : Account page link. <br>
+2- press download to download your private_key <br>
+3- move your :LightsailDefaultKey-eu-central-1.pem to your .ssh folder in your PC. <br>
+For me I did on my terminal : <br>
 
 ```
 open ~/.ssh
