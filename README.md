@@ -33,8 +33,7 @@ A) sudo apt-get update <br>
 B) sudo apt-get upgrade - Press Y - Keep the local version currently installed - Enter <br>
 C) sudo nano /etc/ssh/sshd_config and add Port 2200 under Port 22 without deleting 22 port for now (Press ^W then ^x and say yes)<br>
 D) sudo ufw status <br>
-
-- you should see : status: inactive <br>
+   you should see : status: inactive <br>
 E) sudo ufw default deny incoming <br>
 F) sudo ufw default allow outgoing <br>
 G) sudo ufw allow ssh <br>
