@@ -73,11 +73,12 @@ For me it was:
 ```
 
 if you face this error after you press yes then do the following :
-1- cd ~/.ssh
-2- sudo chmod 600 LightsailDefaultKey-eu-central-1.pem
-3- type your computer password
-4- cd ../
-5- run the line again : ssh -i ~/.ssh/LightsailDefaultKey-eu-central-1.pem ubuntu@52.59.252.140 -p 2200
+
+1- cd ~/.ssh <br>
+2- sudo chmod 600 LightsailDefaultKey-eu-central-1.pem <br>
+3- type your computer password <br>
+4- cd ../ <br>
+5- run the line again : ssh -i ~/.ssh/LightsailDefaultKey-eu-central-1.pem ubuntu@52.59.252.140 -p 2200 <br>
 
 Now you should see your line in the terminal start with something like this : ubuntu@ip-172-26-6-115:~$ , if you see it then port 2200 works fine, you can go to networking nav and delete port 22 , as well as deleting it from configuration file same way as we added port 2200. Now at this point you will not be able to access the terminal from the “lightsial” but from the local terminal.
 
@@ -242,9 +243,10 @@ application.secret_key = 'super_secret_key'
 Make sure to replace your private key from your .pub folder that you got from ssh-keygen
 
 Now you need to rename your .py folder to **init**.py :
+```
 cd catalog
 sudo mv project.py **init**.py
-
+```
 Then I will edit client_secrets.json after I changed the Authorized JavaScript origins and Authorized redirect URIs to the new public ip adress:
 
 ```
